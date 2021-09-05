@@ -1,0 +1,130 @@
+.no-select {
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+section.siteSection {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+}
+h1.siteSection-title {
+    color: rgb(92, 87, 87);
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+/* Header */
+
+div.header {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+a.nav-item {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 1rem 0 1rem;
+    justify-content: center;
+}
+a.nav-item:hover {
+    color: lightgray;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+a.icon {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+
+:root {
+    --text-color-grey:  rgb(138, 138, 138);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.color-black {
+    color: black !important;
+}
+
+.text-format {
+    color: var(--text-color-grey);
+    font-size: 1.2rem;
+}
+
+.ubuntu-font {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.site-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    align-items: center;
+    margin: auto;
+}
+
+h1.section-title {
+    font-size: 2rem;
+    color: rgb(61, 61, 61);
+}
+h1.section-subtitle {
+    font-size: 1.4rem;
+    color: rgb(61, 61, 61);
+}
+
+/* Navbar */
+
+nav.navbar {
+    background-color: inherit;
+    box-shadow: none;
+}
+nav.navbar i, nav.navbar a {
+    color: var(--text-color-grey);
+    font-size: 1.1rem;
+}
+a.navbar-icon {
+    position: relative !important;
+    margin: 10px 3rem 0 2rem;
+}
+img.navbar-icon {
+    height: 2.4rem;
+}
+a.navbar-icon-text {
+    font-size: 1.3rem !important;
+    margin-right: 1rem;
+}
+hr.navbar {
+    margin: 0;
+    padding: 0 10% 0 10%;
+    height: 0;
+    background-color: transparent;
+    border: none;
+    border-top: solid 1px rgb(207, 207, 207);
+}

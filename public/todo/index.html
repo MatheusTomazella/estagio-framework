@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<title>Postagens</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/500b73534a.js" crossorigin="anonymous"></script>
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Materialize Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="ubuntu-font">
+
+    <!-- Navbar -->
+	<nav class="navbar">
+		<div class="nav-wrapper">
+			<ul class="left">
+                <li><a href="/">        FRAMEWORK       </a></li>
+				<li><a href="/posts">   Postagens       </a></li>
+				<li><a href="/albums">  Albums          </a></li>
+				<li><a href="/todo">    Todo            </a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <div class="site-section">
+
+    	<h1 class="section-title" style="margin: 6rem 0 6rem 0">Postagens</h1>
+
+        <!-- Filters -->
+        <div style="display: flex;flex-direction: row;width: 100%;justify-content: space-between;align-items: center;">
+            <h1 class="section-subtitle" style="padding-bottom: 1rem;"> Filtros: </h1>
+            <!-- Id -->
+            <div class="input-field col s12">
+                <input id="postId" placeholder="Id">
+            </div>
+            <!-- User -->
+            <div class="input-field col s12">
+                <input id="userId" placeholder="Id Autor">
+            </div>
+            <!-- Search -->
+            <button class="btn waves-effect waves-light" type="button" onclick="searchWithFilters()">
+                Buscar
+                <i class="material-icons right">search</i>
+            </button>
+        </div>
+
+
+			<!-- List -->
+		<ul id="list" class="collapsible" style="width: 100%;">
+			<!-- Elements -->
+		</ul>
+        
+	</div>
+
+</body>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Materialize Js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Scripts -->
+<script src="../js/fetch.js"></script>
+<script src="js/index.js"></script>
+</html>
