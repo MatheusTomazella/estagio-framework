@@ -45,7 +45,8 @@ function fillAlbums ( query = "" ) {
     fetch( "https://jsonplaceholder.typicode.com/photos"+query )
     .then( pics => {
         pics.forEach( pic => {
-            document.getElementById( "images"+pic.albumId ).innerHTML += `<img src="${pic.url}">`;
+            const album = document.getElementById( "images"+pic.albumId );
+            if ( album ) album.innerHTML += `<img src="${pic.url}">`;
         } )
         setLoading(false);
     } )
